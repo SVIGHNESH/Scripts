@@ -1,0 +1,10 @@
+[Unit]
+Description=Firefox Auto-Start on Workspace 1
+
+[Service]
+Type=oneshot
+ExecStart=/home/vighnesh/.local/bin/firefox-workspace1.sh
+RemainAfterExit=no
+
+[Install]
+WantedBy=default.target
